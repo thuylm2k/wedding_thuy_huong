@@ -1,0 +1,11 @@
+#wedding_invitation {
+    .time_wedding {
+        &::before {
+            content: ' ';
+            height: 2px;
+            width: 30px;
+            background-color: aqua;
+        }
+    }
+}
+
