@@ -1,6 +1,6 @@
 import { Mea_Culpa, Playball } from "next/font/google";
 import Image from "next/image";
-import "../assets/styles/wedding_invitation.scss";
+// import "../assets/styles/wedding_invitation.scss";
 
 const playball = Playball({
   weight: ["400", "400"],
@@ -14,16 +14,14 @@ const mea_Culpa = Mea_Culpa({
 
 const WeddingInvitationV2 = () => {
   return (
-    <div
-      className="w-full xl:w-1/2 h-screen lg:h-full p-1 sm:p-0 sm:py-2 sm:pl-2 bg-white xl:rounded-none xl:rounded-l-xl shadow-[inset_0_0_8px_8px_rgba(255,115,140,0.5)] z-10"
-    >
+    <div className="w-full lg:w-1/2 h-screen lg:h-full py-2 pl-2 pr-2 lg:pr-0 bg-white xl:rounded-l-xl shadow-[inset_0_0_8px_8px_rgba(255,115,140,0.5)] z-10">
       <div
         className="w-full h-full flex flex-col lg:flex-row flex-nowrap justify-between content-center items-center text-[#873d32] rounded-xl xl:rounded-none xl:rounded-l-xl bg-no-repeat bg-cover"
         style={{
           background: "url('/images/bg_thiep_cuoi_hong.png')",
         }}
       >
-        <div className="w-full lg:w-auto flex flex-row lg:flex-col flex-nowrap justify-between items-center">
+        <div className="w-full lg:w-auto lg:h-full  flex flex-row lg:flex-col flex-nowrap justify-between items-center">
           <Image
             width={256}
             height={149}
@@ -101,7 +99,7 @@ const WeddingInvitationV2 = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-auto flex flex-row lg:flex-col flex-nowrap justify-between items-center">
+        <div className="w-full lg:w-auto lg:h-full  flex flex-row lg:flex-col flex-nowrap justify-between items-center">
           <Image
             width={256}
             height={149}
