@@ -9,7 +9,7 @@ const playball = Playball({
 
 const Albums = () => {
   const dataImg = [
-    { id: 1, photo: "img_album_01_authentic.jpg" },
+    { id: 1, photo: "img_album_01_authentic.JPG" },
     { id: 2, photo: "img_album_02_authentic.jpg" },
     { id: 3, photo: "img_album_03_authentic.jpg" },
     { id: 4, photo: "img_album_04_authentic.jpg" },
