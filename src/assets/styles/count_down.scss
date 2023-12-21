@@ -1,0 +1,102 @@
+$clr1: #ff2972;
+$clr2: #fee800;
+$clr3: #04fc43;
+
+$clr4: #c9d5e0;
+$clr5: #152b4a;
+$clr6: #152b4a66;
+
+#count_down {
+  width: fit-content;
+  margin-bottom: 12px;
+  .clock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 4px;
+
+    .digital {
+      position: relative;
+      width: 87px;
+      height: 87px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--bgr);
+      border-radius: 30px;
+      box-shadow: 20px 20px 20px -10px rgba(247, 126, 148, 0.15),
+        inset 15px 15px 10px rgba(255, 235, 235, 0.5),
+        -15px -15px 35px rgba(255, 235, 235, 0.35),
+        inset -1px -1px 10px rgba(247, 126, 148, 0.2);
+
+      .screen {
+        position: absolute;
+        inset: 12px;
+        background: var(--clr);
+        // background: #ffebeb;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px 0 #ff738c,
+          inset 5px 5px 5px rgba($color: #fff5f7, $alpha: 0.35),
+          -6px -6px 10px rgba($color: #fff5f7, $alpha: 1);
+
+        &::before {
+          content: attr(data-text);
+          position: absolute;
+          bottom: -17px;
+          left: 50%;
+          transform: translateX(-50%) scale(0.75);
+          letter-spacing: 0.1rem;
+          color: #d44e5e;
+          text-transform: uppercase;
+          font-weight: 900;
+          font-family: Georgia, "Times New Roman", Times, serif;
+          font-size: 13px;
+        }
+
+        .time {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            position: relative;
+            font-size: 2.6rem;
+            color: var(--clr2);
+            letter-spacing: 0.1rem;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #count_down {
+    .clock {
+      gap: 28px;
+
+      .digital {
+        width: 150px;
+        height: 150px;
+        .screen {
+          inset: 24px;
+          &::before {
+            bottom: -26px;
+            font-size: 18px;
+          }
+
+          .time {
+            div {
+              font-size: 3.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

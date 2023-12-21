@@ -1,0 +1,35 @@
+.container_album {
+  width: 100%;
+  margin: 12px auto;
+  columns: 2;
+  column-gap: 4px;
+  padding: 3px;
+
+  .box {
+    width: 100%;
+    margin-bottom: 4px;
+    break-inside: auto;
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container_album {
+    width: 1400px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 16px;
+
+    .box {
+      margin-bottom: 10px;
+
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+}

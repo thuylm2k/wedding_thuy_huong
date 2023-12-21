@@ -1,47 +1,52 @@
 "use client";
-import WeddingInvitationV2 from "@/components/WeddingInvitationV2";
-import Image from "next/image";
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import GroomBride from "./GroomBride";
 import CountdownWedding from "./CountdownWedding";
+import Albums from "./Albums";
+import Maps from "./Maps";
+import TimeLineWedding from "./TimeLineWedding";
+import GibtsWedding from "./GibtsWedding";
+import WeddingInvitation from "./WeddingInvitation";
+import "@/assets/styles/home.scss";
 
 const Home = () => {
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     heart();
+  //   }, 100);
+  // }, []);
+
+  // function heart() {
+  //   const el = document.getElementById("home_wedding");
+  //   let e = document.createElement("div");
+  //   e.setAttribute("class", "heart");
+  //   el?.appendChild(e);
+  //   e.style.left = Math.random() * +innerWidth + "px";
+
+  //   let size = Math.random() * 12;
+  //   let duration = Math.random() * 3;
+
+  //   e.style.fontSize = 12 + size + "px";
+  //   e.style.animationDuration = 2 + duration + "px";
+
+  //   setTimeout(() => {
+  //     el?.removeChild(e);
+  //   }, 5000);
+  // }
   return (
-    <Fragment>
-      <header className="w-full h-screen max-h-screen flex flex-nowrap justify-center items-center bg-[#fee2e4]">
-        <div
-          className="w-fit h-full flex flex-row flex-nowrap justify-center gap-x-1 bg-[#ecaaad] bg-no-repeat bg-cover"
-          style={{
-            background: "url('/images/bg_thiep_cuoi_hong.png')",
-          }}
-        >
-          <div className="w-fit h-full">
-            <WeddingInvitationV2 />
-          </div>
-          <div
-            className="relative w-fit h-full rounded"
-            style={{
-              background:
-                "linear-gradient(138deg, rgba(255,238,241,1) 0%, rgba(255,241,242,1) 25%, rgba(255,238,241,1) 50%, rgba(255,241,242,1) 75%, rgba(255,196,207,1) 100%)",
-            }}
-          >
-            <div className="w-fit h-full flex flex-row flex-nowrap justify-center gap-2">
-              <Image
-                width={3072}
-                height={4608}
-                src="/images/TOM03117.JPG"
-                alt=""
-                className="w-fit h-full z-20 object-contain"
-              />
-            </div>
-          </div>
-        </div>
+    <main id="home_wedding" className="min-h-screen bg-[rgb(255,240,244)]">
+      <header>
+        <WeddingInvitation />
       </header>
-      <main>
+      <div>
         <GroomBride />
         <CountdownWedding />
-      </main>
-    </Fragment>
+        <Albums />
+        <TimeLineWedding />
+        <GibtsWedding />
+        <Maps />
+      </div>
+    </main>
   );
 };
 

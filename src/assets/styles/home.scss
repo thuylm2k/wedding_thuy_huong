@@ -1,0 +1,31 @@
+#home_wedding {
+    position: relative;
+    overflow: hidden;
+    .heart {
+      position: absolute;
+      top: -20;
+      color: #fc3258;
+      animation: animate 5s linear infinite;
+  
+      @keyframes animate {
+        0% {
+          transform: translateY(0), rotate(0deg);
+          opacity: 1;
+        }
+        80% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+  
+      &::before {
+        content: "\F415";
+        font-family: Bootstrap-icons;
+        text-shadow: 0 0 5px #fc3258, 0 0 10px #fc3258, 0 0 20px #fc3258;
+      }
+    }
+  }
+  
