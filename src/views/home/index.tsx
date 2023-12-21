@@ -21,7 +21,6 @@ const Home = () => {
         <Albums />
         <TimeLineWedding />
         <GibtsWedding />
-        <Maps />
       </div>
     </main>
   );

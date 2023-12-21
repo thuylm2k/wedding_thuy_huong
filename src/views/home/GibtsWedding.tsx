@@ -47,6 +47,16 @@ const GibtsWedding = () => {
               className="w-[300px] object-contain rounded"
             />
           </div>
+          <div
+            className="mt-3 rounded-lg"
+            style={{ boxShadow: "0 0 6px 6px rgba(255,255,255,1)" }}
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d8925.856993886964!2d105.41293301428117!3d19.84585148213314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDUwJzQyLjQiTiAxMDXCsDI1JzAzLjciRQ!5e0!3m2!1svi!2s!4v1702835325657!5m2!1svi!2s"
+              className="w-full h-[300px] rounded-lg"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
         <div className="">
           <Image
@@ -82,6 +92,16 @@ const GibtsWedding = () => {
               alt="QR"
               className="w-[300px] object-contain rounded"
             />
+          </div>
+          <div
+            className="mt-3 rounded-lg"
+            style={{ boxShadow: "0 0 6px 6px rgba(255,255,255,1)" }}
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2653.6051303352624!2d105.41834007315184!3d19.849920780547368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3136e80f9a64c8af%3A0xf740c4b3ccc037b4!2zbMOgbmcgU3VuZywgWHXDom4gUGjDuiwgVGjhu40gWHXDom4sIFRoYW5oIEhvw6EsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1702835248530!5m2!1svi!2s"
+              className="w-full h-[300px] rounded-lg"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
