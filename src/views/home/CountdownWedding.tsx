@@ -55,7 +55,7 @@ const CountdownWedding = () => {
       id="countdown_wedding"
       className="w-full lg:h-screen my-2 lg:my-6 flex flex-col lg:flex-row flex-nowrap items-center justify-center"
     >
-      <div className="w-full lg:w-1/2 h-full flex flex-col flex-nowrap justify-center content-center items-center lg:gap-y-5 z-10">
+      <div className=" hidden w-full lg:w-1/2 h-full sm:flex flex-col flex-nowrap justify-center content-center items-center lg:gap-y-5 z-10">
         <div className="w-fit h-fit">
           <div className="relative w-fit mb-3 flex flex-col flex-nowrap items-center lg:items-start gap-4 lg:gap-14">
             <div className="w-fit">
@@ -101,6 +101,36 @@ const CountdownWedding = () => {
             alt="wedding_03"
             className="w-full object-contain rounded-xl lg:-translate-y-12"
           />
+        </div>
+
+        <div className="w-full h-full absolute top-0 bottom-0 left-0 right-0 z-30">
+          <div className="w-full h-full flex flex-col flex-nowrap justify-end items-center">
+            <div className="relative w-fit mb-3 flex flex-col flex-nowrap items-center gap-4 ">
+              <div className="w-fit">
+                <Image
+                  width={221}
+                  height={73}
+                  src="/svgs/ic_heart.svg"
+                  alt=""
+                  className="w-[180px] object-contain"
+                />
+              </div>
+
+              <section
+                className={`${allison.className} w-fit flex flex-col flex-nowrap items-center lg:items-start text-[#d65a68] text-4xl`}
+              >
+                <div className="w-fit flex flex-col flex-nowrap items-center">
+                  <p className="font-black">Thu Hương</p>
+                  <p className="">&</p>
+                  <p className="font-black">Minh Thủy</p>
+                </div>
+                <div className="mt-3 tracking-widest font-black">
+                  31.12.2023
+                </div>
+              </section>
+            </div>
+            <Countdown />
+          </div>
         </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ const Albums = () => {
   return (
     <div className={`${playball.className} my-2 lg:my-6`}>
       <p className="lg:mb-8 text-2xl lg:text-5xl text-center font-semibold underline underline-offset-8 text-[#873d32]">
-        Albums
+        Albums Chúng Tôi
       </p>
 
       <div className="container_album">

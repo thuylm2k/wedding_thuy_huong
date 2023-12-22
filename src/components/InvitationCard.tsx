@@ -1,6 +1,5 @@
 import { Mea_Culpa, Playball } from "next/font/google";
 import Image from "next/image";
-// import "../assets/styles/wedding_invitation.scss";
 
 const playball = Playball({
   weight: ["400", "400"],
@@ -12,9 +11,9 @@ const mea_Culpa = Mea_Culpa({
   subsets: ["latin"],
 });
 
-const WeddingInvitationV2 = () => {
+const InvitationCard = () => {
   return (
-    <div className="w-full lg:w-1/2 h-screen lg:h-full py-2 pl-2 pr-2 lg:pr-0 bg-white xl:rounded-l-xl shadow-[inset_0_0_8px_8px_rgba(255,115,140,0.5)] z-10">
+    <div className="w-full lg:w-1/2 h-fit lg:h-full py-2 pl-2 pr-2 lg:pr-0 bg-white xl:rounded-l-xl shadow-[inset_0_0_8px_8px_rgba(255,115,140,0.5)] lg:z-10">
       <div
         className="w-full h-full flex flex-col lg:flex-row flex-nowrap justify-between content-center items-center text-[#873d32] rounded-xl xl:rounded-none xl:rounded-l-xl bg-no-repeat bg-cover"
         style={{
@@ -27,7 +26,7 @@ const WeddingInvitationV2 = () => {
             height={149}
             src="/icons/ic_hoa_thiep_cuoi_16.png"
             alt="ic_hoa_thiep_cuoi"
-            className="w-[72px] xl:w-[120px] object-contain rotate-180"
+            className="w-[60px] xl:w-[120px] object-contain rotate-180"
           />
 
           <Image
@@ -35,13 +34,15 @@ const WeddingInvitationV2 = () => {
             height={149}
             src="/icons/ic_hoa_thiep_cuoi_17.png"
             alt="ic_hoa_thiep_cuoi"
-            className="w-[72px] xl:w-[120px] object-contain rotate-180"
+            className="w-[60px] xl:w-[120px] object-contain rotate-180"
           />
         </div>
 
-        <div className="w-max flex flex-row flex-nowrap justify-center items-center text-[#873d32] z-10">
+        <div className="w-max flex flex-row flex-nowrap justify-center items-center text-[#873d32]">
           <div className="w-max flex flex-col flex-nowrap items-center justify-center text-lg xl:text-2xl gap-1 xl:gap-3">
-            <p className={`${playball.className} m-0 capitalize`}>
+            <p
+              className={`${playball.className} hidden lg:block m-0 capitalize`}
+            >
               Ngày đặc biệt của tình yêu và điều diệu kỳ
             </p>
 
@@ -105,7 +106,7 @@ const WeddingInvitationV2 = () => {
             height={149}
             src="/icons/ic_hoa_thiep_cuoi_17.png"
             alt="ic_hoa_thiep_cuoi"
-            className="w-[72px] xl:w-[120px] object-contain"
+            className="w-[60px] xl:w-[120px] object-contain"
           />
 
           <Image
@@ -113,7 +114,7 @@ const WeddingInvitationV2 = () => {
             height={149}
             src="/icons/ic_hoa_thiep_cuoi_16.png"
             alt="ic_hoa_thiep_cuoi"
-            className="w-[72px] xl:w-[120px] object-contain"
+            className="w-[60px] xl:w-[120px] object-contain"
           />
         </div>
       </div>
@@ -121,4 +122,4 @@ const WeddingInvitationV2 = () => {
   );
 };
 
-export default WeddingInvitationV2;
+export default InvitationCard;
