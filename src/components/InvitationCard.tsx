@@ -13,14 +13,14 @@ const mea_Culpa = Mea_Culpa({
 
 const InvitationCard = () => {
   return (
-    <div className="w-full lg:w-1/2 h-fit lg:h-full py-2 pl-2 pr-2 lg:pr-0 bg-white xl:rounded-l-xl shadow-[inset_0_0_8px_8px_rgba(255,115,140,0.5)] lg:z-10">
+    <div className="w-full sm:w-1/2 h-fit lg:h-full py-2 pl-2 pr-2 sm:pr-0 bg-white sm:rounded-l-xl shadow-[inset_0_0_8px_8px_rgba(255,115,140,0.5)] sm:z-10">
       <div
-        className="w-full h-full flex flex-col lg:flex-row flex-nowrap justify-between content-center items-center text-[#873d32] rounded-xl xl:rounded-none xl:rounded-l-xl bg-no-repeat bg-cover"
+        className="relative w-full h-full flex flex-col lg:flex-row flex-nowrap justify-between content-center items-center text-[#873d32] rounded-xl xl:rounded-none xl:rounded-l-xl bg-no-repeat bg-cover"
         style={{
           background: "url('/images/bg_thiep_cuoi_hong.png')",
         }}
       >
-        <div className="w-full lg:w-auto lg:h-full  flex flex-row lg:flex-col flex-nowrap justify-between items-center">
+        <div className="sm:absolute sm:top-0 sm:left-0 sm:right-0 w-full lg:w-auto lg:h-full flex flex-row lg:flex-col flex-nowrap justify-between items-center">
           <Image
             width={256}
             height={149}
@@ -38,7 +38,7 @@ const InvitationCard = () => {
           />
         </div>
 
-        <div className="w-max flex flex-row flex-nowrap justify-center items-center text-[#873d32]">
+        <div className="w-max sm:my-5 flex flex-row flex-nowrap justify-center items-center text-[#873d32] z-10">
           <div className="w-max flex flex-col flex-nowrap items-center justify-center text-lg xl:text-2xl gap-1 xl:gap-3">
             <p
               className={`${playball.className} hidden lg:block m-0 capitalize`}
@@ -76,9 +76,10 @@ const InvitationCard = () => {
                   <span>09 Giờ 00</span>
                   <hr className="h-0.5 w-2 bg-[#873d32]" />
                   <span>Chủ nhật</span>
-                  <hr className="h-0.5 w-2 bg-[#873d32]" />
-                  <span>Tức 19/11 Quý Mão</span>
+                  <hr className="sm:hidden md:block h-0.5 w-2 bg-[#873d32]" />
+                  <span className="sm:hidden md:block">Tức 19/11 Quý Mão</span>
                 </div>
+                <p>Tức 19/11 Quý Mão</p>
               </section>
 
               <section
@@ -100,7 +101,7 @@ const InvitationCard = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-auto lg:h-full  flex flex-row lg:flex-col flex-nowrap justify-between items-center">
+        <div className="sm:absolute sm:bottom-0 sm:left-0 sm:right-0 w-full lg:w-auto lg:h-full  flex flex-row lg:flex-col flex-nowrap justify-between items-center">
           <Image
             width={256}
             height={149}
