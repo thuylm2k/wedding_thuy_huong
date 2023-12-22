@@ -103,7 +103,7 @@ const CountdownWedding = () => {
           />
         </div>
 
-        <div className="w-full h-full absolute top-0 bottom-0 left-0 right-0 z-30">
+        <div className="lg:hidden w-full h-full absolute top-0 bottom-0 left-0 right-0 z-30">
           <div className="w-full h-full flex flex-col flex-nowrap justify-end items-center">
             <div className="relative w-fit mb-3 flex flex-col flex-nowrap items-center gap-4 ">
               <div className="w-fit">
