@@ -39,7 +39,7 @@ const GroomBride = () => {
           <Image
             width={3072}
             height={4608}
-            src="/images/img_wedding_02_authentic_v4.jpg"
+            src="/images/img_wedding_02_authentic_v4.JPG"
             alt=""
             className="w-full object-contain"
           />
