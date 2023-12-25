@@ -78,6 +78,58 @@ $clr6: #152b4a66;
 @media screen and (min-width: 1024px) {
   #count_down {
     .clock {
+      gap: 8px;
+
+      .digital {
+        width: 116px;
+        height: 116px;
+        .screen {
+          inset: 18px;
+          &::before {
+            bottom: -26px;
+            font-size: 18px;
+          }
+
+          .time {
+            div {
+              font-size: 3.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #count_down {
+    .clock {
+      gap: 12px;
+
+      .digital {
+        width: 140px;
+        height: 140px;
+        .screen {
+          inset: 20px;
+          &::before {
+            bottom: -26px;
+            font-size: 18px;
+          }
+
+          .time {
+            div {
+              font-size: 3.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  #count_down {
+    .clock {
       gap: 28px;
 
       .digital {

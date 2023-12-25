@@ -20,7 +20,7 @@ const InvitationCard = () => {
           background: "url('/images/bg_thiep_cuoi_hong.png')",
         }}
       >
-        <div className="sm:absolute sm:top-0 sm:left-0 sm:right-0 w-full lg:w-auto lg:h-full flex flex-row lg:flex-col flex-nowrap justify-between items-center">
+        <div className="sm:absolute lg:relative sm:top-0 sm:left-0 sm:right-0 w-full lg:w-auto lg:h-full flex flex-row lg:flex-col flex-nowrap justify-between items-center">
           <Image
             width={256}
             height={149}
@@ -79,7 +79,7 @@ const InvitationCard = () => {
                   <hr className="sm:hidden md:block h-0.5 w-2 bg-[#873d32]" />
                   <span className="sm:hidden md:block">Tức 19/11 Quý Mão</span>
                 </div>
-                <p>Tức 19/11 Quý Mão</p>
+                <p className="hidden">Tức 19/11 Quý Mão</p>
               </section>
 
               <section
@@ -101,7 +101,7 @@ const InvitationCard = () => {
           </div>
         </div>
 
-        <div className="sm:absolute sm:bottom-0 sm:left-0 sm:right-0 w-full lg:w-auto lg:h-full  flex flex-row lg:flex-col flex-nowrap justify-between items-center">
+        <div className="sm:absolute lg:relative sm:bottom-0 sm:left-0 sm:right-0 w-full lg:w-auto lg:h-full  flex flex-row lg:flex-col flex-nowrap justify-between items-center">
           <Image
             width={256}
             height={149}

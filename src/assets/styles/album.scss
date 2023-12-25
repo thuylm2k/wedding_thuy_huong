@@ -19,6 +19,40 @@
 
 @media screen and (min-width: 1024px) {
   .container_album {
+    width: 100%;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 6px;
+
+    .box {
+      margin-bottom: 6px;
+
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container_album {
+    width: 100%;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 8px;
+
+    .box {
+      margin-bottom: 8px;
+
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .container_album {
     width: 1400px;
     margin: 20px auto;
     columns: 4;

@@ -65,7 +65,7 @@ const CountdownWedding = () => {
       >
         <div className=" hidden w-full lg:w-1/2 h-full sm:flex flex-col flex-nowrap justify-center content-center items-center lg:gap-y-5 z-10">
           <div className="w-fit h-fit">
-            <div className="relative w-fit mb-3 flex flex-col flex-nowrap items-center lg:items-start gap-4 lg:gap-14">
+            <div className="relative w-fit mb-3 flex flex-col flex-nowrap items-center lg:items-start gap-4 lg:gap-6 xl:gap-14">
               <div className="w-fit">
                 <Image
                   width={221}
@@ -77,9 +77,9 @@ const CountdownWedding = () => {
               </div>
 
               <section
-                className={`${allison.className} w-fit flex flex-col flex-nowrap items-center lg:items-start text-[#d65a68] text-7xl`}
+                className={`${allison.className} w-fit flex flex-col flex-nowrap items-center lg:items-start text-[#d65a68] text-6xl xl:text-7xl`}
               >
-                <div className="w-fit flex flex-col lg:flex-row flex-nowrap items-center lg:gap-3">
+                <div className="w-fit flex flex-col lg:flex-row flex-nowrap items-center lg:gap-1 xl:gap-3">
                   <span>Thu Hương</span>
                   <span className="text-6xl">&</span>
                   <span>Minh Thủy</span>

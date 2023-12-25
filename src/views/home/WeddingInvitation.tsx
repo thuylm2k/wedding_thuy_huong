@@ -50,7 +50,7 @@ const WeddingInvitation = () => {
     <>
       <div
         id="wedding_invitation"
-        className="w-full sm:h-screen xl:py-4 flex flex-col sm:flex-row flex-nowrap justify-center"
+        className="w-full sm:h-screen lg:py-4 flex flex-col sm:flex-row flex-nowrap justify-center"
       >
         <div
           onClick={() => {

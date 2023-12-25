@@ -29,7 +29,7 @@ const TimeLineWedding = () => {
   return (
     <>
       <div className={`${playball.className} my-2 lg:my-6`}>
-        <p className="mb-4 lg:mb-8 text-2xl lg:text-5xl text-center font-semibold underline underline-offset-8 text-[#873d32]">
+        <p className="mb-4 xl:mb-8 text-2xl lg:text-4xl xl:text-5xl text-center font-semibold underline underline-offset-8 text-[#873d32]">
           Dòng Thời Gian
         </p>
 
@@ -37,7 +37,7 @@ const TimeLineWedding = () => {
           className={`flex flex-col lg:flex-row flex-nowrap justify-center items-center gap-6 lg:gap-20`}
         >
           {/* Timeline Wedding */}
-          <div className="w-full lg:w-2/5 px-3 min-[500px]:px-10 lg:px-0 grid grid-cols-3">
+          <div className="w-full lg:w-1/2 xl:w-2/5 px-3 min-[500px]:px-10 lg:px-0 grid grid-cols-3">
             {/* Timeline I */}
             <div className="py-3 lg:py-4">
               <Image
@@ -45,7 +45,7 @@ const TimeLineWedding = () => {
                 height={110}
                 src="/icons/ic_timeline_01.png"
                 alt=""
-                className="w-[80px] lg:w-[110px] object-contain"
+                className="w-[80px] lg:w-[90px] xl:w-[110px] object-contain"
               />
             </div>
             <div className="relative flex justify-center">
@@ -59,7 +59,7 @@ const TimeLineWedding = () => {
                   height={64}
                   src="/icons/ic_heart_timeline.png"
                   alt=""
-                  className="w-[50px] lg:w-[64px] object-contain"
+                  className="w-[50px]  lg:w-[56px] xl:w-[64px] object-contain"
                 />
               </div>
             </div>
@@ -75,7 +75,7 @@ const TimeLineWedding = () => {
                 height={110}
                 src="/icons/ic_timeline_02.png"
                 alt=""
-                className="w-[80px] lg:w-[110px] object-contain"
+                className="w-[80px] lg:w-[90px] xl:w-[110px] object-contain"
               />
             </div>
             <div className="relative flex justify-center">
@@ -89,7 +89,7 @@ const TimeLineWedding = () => {
                   height={64}
                   src="/icons/ic_heart_timeline.png"
                   alt=""
-                  className="w-[50px] lg:w-[64px] object-contain"
+                  className="w-[50px] lg:w-[56px] xl:w-[64px] object-contain"
                 />
               </div>
             </div>
@@ -105,7 +105,7 @@ const TimeLineWedding = () => {
                 height={110}
                 src="/icons/ic_timeline_03_v2.png"
                 alt=""
-                className="w-[80px] lg:w-[110px] object-contain"
+                className="w-[80px] lg:w-[90px] xl:w-[110px] object-contain"
               />
             </div>
             <div className="relative flex justify-center">
@@ -116,7 +116,7 @@ const TimeLineWedding = () => {
                   height={64}
                   src="/icons/ic_heart_timeline.png"
                   alt=""
-                  className="w-[50px] lg:w-[64px] object-contain"
+                  className="w-[50px] lg:w-[56px] xl:w-[64px] object-contain"
                 />
               </div>
             </div>
@@ -132,7 +132,7 @@ const TimeLineWedding = () => {
                 height={110}
                 src="/icons/ic_timeline_04.png"
                 alt=""
-                className="w-[80px] lg:w-[110px] object-contain"
+                className="w-[80px] lg:w-[90px] xl:w-[110px] object-contain"
               />
             </div>
             <div className="relative flex justify-center">
@@ -143,7 +143,7 @@ const TimeLineWedding = () => {
                   height={64}
                   src="/icons/ic_heart_timeline.png"
                   alt=""
-                  className="w-[50px] lg:w-[64px] object-contain"
+                  className="w-[50px] lg:w-[56px] xl:w-[64px] object-contain"
                 />
               </div>
             </div>
@@ -159,7 +159,7 @@ const TimeLineWedding = () => {
                 height={110}
                 src="/icons/ic_timeline_05.png"
                 alt=""
-                className="w-[80px] lg:w-[110px] object-contain"
+                className="w-[80px] lg:w-[90px] xl:w-[110px] object-contain"
               />
             </div>
             <div className="relative flex justify-center">
@@ -170,7 +170,7 @@ const TimeLineWedding = () => {
                   height={64}
                   src="/icons/ic_heart_timeline.png"
                   alt=""
-                  className="w-[50px] lg:w-[64px] object-contain"
+                  className="w-[50px] lg:w-[56px] xl:w-[64px] object-contain"
                 />
               </div>
             </div>
@@ -181,7 +181,7 @@ const TimeLineWedding = () => {
           </div>
 
           {/* Date Wedding */}
-          <div className="w-full lg:w-1/4 h-full grid grid-cols-1 gap-3">
+          <div className="w-full lg:w-2/6 2xl:w-1/4 h-full grid grid-cols-1 gap-3">
             <div className="w-full px-3 flex flex-col flex-nowrap justify-center content-center rounded text-[#873d32]">
               <div className="mb-3 flex justify-center items-center text-4xl">
                 <span>Save The Date</span>

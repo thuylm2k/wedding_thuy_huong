@@ -19,13 +19,13 @@ const GibtsWedding = () => {
   return (
     <>
       <div
-        className={`${playball.className} w-full my-2 lg:my-6 px-2 lg:px-32 flex flex-col flex-nowrap items-center justify-center content-center gap-y-2 lg:gap-y-6 text-[#873d32]`}
+        className={`${playball.className} w-full my-2 lg:my-6 px-2 lg:px-10 2xl:px-32 flex flex-col flex-nowrap items-center justify-center content-center gap-y-2 lg:gap-y-6 text-[#873d32]`}
       >
-        <p className="text-2xl lg:text-5xl font-semibold underline underline-offset-8">
+        <p className="text-2xl lg:text-4xl xl:text-5xl font-semibold underline underline-offset-8">
           Quà Cưới
         </p>
 
-        <p className="w-full lg:w-2/3 text-xl lg:text-2xl text-center">
+        <p className="w-full lg:w-11/12 text-xl lg:text-2xl text-center">
           Mình rất muốn được chụp chung với bạn những tấm hình kỷ niệm vì vậy
           hãy đến sớm hơn một chút bạn yêu nhé! Đám cưới của chúng mình sẽ trọn
           vẹn hơn khi có thêm lời chúc phúc và sự hiện diện của các bạn.
